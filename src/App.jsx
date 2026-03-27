@@ -13,7 +13,7 @@ function App() {
       messages: [
         {
           role: "assistant",
-          text: "안녕하세요. **Galaxy S26 제품 상담 챗봇**입니다.\n\n궁금한 점을 입력하면 PDF 설명서와 MD 비교 문서를 바탕으로 답변해드릴게요.",
+          text: "안녕하세요. **Galaxy S26 제품 상담 챗봇**입니다.\n\n궁금한 점을 입력하면 PDF 설명서와 MD, json 비교 문서를 바탕으로 답변해드릴게요.",
         },
       ],
       sources: [],
@@ -67,7 +67,7 @@ function App() {
       messages: [
         {
           role: "assistant",
-          text: "안녕하세요. **Galaxy S26 제품 상담 챗봇**입니다.\n\n궁금한 점을 입력하면 PDF 설명서와 MD 비교 문서를 바탕으로 답변해드릴게요.",
+          text: "안녕하세요. **Galaxy S26 제품 상담 챗봇**입니다.\n\n궁금한 점을 입력하면 PDF 설명서와 MD, json 비교 문서를 바탕으로 답변해드릴게요.",
         },
       ],
       sources: [],
@@ -350,7 +350,7 @@ function App() {
               현재 대화: {activeConversation.title}
             </span>
             <span className="toolbar-chip">Top-K {topK}</span>
-            <span className="toolbar-chip">PDF + MD 기반 응답</span>
+            <span className="toolbar-chip">PDF + MD + json 기반 응답</span>
           </div>
 
           <section className="input-bar">
@@ -384,7 +384,7 @@ function App() {
 
             <div className="info-card">
               <span className="info-label">Embedding</span>
-              <span className="info-value">bge-m3</span>
+              <span className="info-value">qwen3-embedding:8b</span>
             </div>
 
             <div className="info-card">
@@ -394,7 +394,7 @@ function App() {
 
             <div className="info-card">
               <span className="info-label">문서 형식</span>
-              <span className="info-value">PDF + MD</span>
+              <span className="info-value">PDF + MD + json</span>
             </div>
           </div>
 

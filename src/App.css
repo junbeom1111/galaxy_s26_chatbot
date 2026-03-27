@@ -550,10 +550,9 @@ input {
   white-space: pre-wrap;
 }
 
-/* markdown */
 .markdown-content {
-  font-size: 15px;
-  line-height: 1.75;
+  text-align: left;
+  line-height: 1.6;
 }
 
 .markdown-content p {
@@ -566,8 +565,8 @@ input {
 
 .markdown-content ul,
 .markdown-content ol {
-  margin: 8px 0 14px 22px;
-  padding-left: 0;
+  padding-left: 20px;
+  text-align: left;
 }
 
 .markdown-content li {
@@ -789,7 +788,7 @@ input {
   }
 
   .message-bubble {
-    max-width: 100%;
+    text-align: left;
   }
 
   .input-bar {
